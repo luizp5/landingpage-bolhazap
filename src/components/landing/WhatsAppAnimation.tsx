@@ -5,6 +5,7 @@ interface Message {
   id: number;
   text: string;
   time: string;
+  isBot: boolean;
 }
 
 export const WhatsAppAnimation = () => {
@@ -12,9 +13,18 @@ export const WhatsAppAnimation = () => {
   const [isTyping, setIsTyping] = useState(false);
 
   const messageSequence = [
-    { text: "Gastei 55,00 no almoço hoje", time: "12:30" },
-    { text: "Recebi 200,00 do freelance", time: "14:15" },
-    { text: "Paguei 150,00 de internet", time: "16:45" },
+    { text: "Gastei 55,00 no almoço hoje", time: "12:30", isBot: false },
+    { 
+      text: "🎉 Despesa registrada com sucesso!\n\n✅ Tipo: Despesa\n📝 Descrição: Almoço\n💰 Valor: R$ 55,00\n📍 Categoria: Alimentação\n🗓 Data: 23/10/2025", 
+      time: "12:30", 
+      isBot: true 
+    },
+    { text: "Recebi 200,00 de freelance", time: "14:15", isBot: false },
+    { 
+      text: "🎉 Que ótimo! Receita adicionada com sucesso!\n\n✅ Tipo: Receita\n📝 Descrição: Freelance\n💰 Valor: R$ 200,00\n📍 Categoria: Freelance\n🗓 Data: 23/10/2025", 
+      time: "14:15", 
+      isBot: true 
+    },
   ];
 
   useEffect(() => {
@@ -95,13 +105,13 @@ export const WhatsAppAnimation = () => {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="flex justify-end"
+                    className={`flex ${message.isBot ? 'justify-start' : 'justify-end'}`}
                   >
-                    <div className="bg-[#DCF8C6] rounded-lg rounded-tr-none px-3 py-2 max-w-[80%] shadow-sm">
-                      <p className="text-sm text-gray-800">{message.text}</p>
-                      <div className="flex items-center justify-end gap-1 mt-1">
+                    <div className={`${message.isBot ? 'bg-white rounded-lg rounded-tl-none' : 'bg-[#DCF8C6] rounded-lg rounded-tr-none'} px-3 py-2 max-w-[85%] shadow-sm`}>
+                      <p className="text-sm text-gray-800 whitespace-pre-line">{message.text}</p>
+                      <div className={`flex items-center ${message.isBot ? 'justify-start' : 'justify-end'} gap-1 mt-1`}>
                         <span className="text-[10px] text-gray-500">{message.time}</span>
-                        <span className="text-[10px] text-blue-500">✓✓</span>
+                        {!message.isBot && <span className="text-[10px] text-blue-500">✓✓</span>}
                       </div>
                     </div>
                   </motion.div>
@@ -115,9 +125,9 @@ export const WhatsAppAnimation = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
-                    className="flex justify-end"
+                    className="flex justify-start"
                   >
-                    <div className="bg-[#DCF8C6] rounded-lg rounded-tr-none px-4 py-3 shadow-sm">
+                    <div className="bg-white rounded-lg rounded-tl-none px-4 py-3 shadow-sm">
                       <div className="flex gap-1">
                         <motion.div
                           className="w-2 h-2 bg-gray-500 rounded-full"
