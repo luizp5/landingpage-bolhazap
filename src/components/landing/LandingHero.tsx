@@ -93,7 +93,7 @@ const LandingHero = () => {
           <div className="relative order-2 h-[420px] md:h-[560px] pointer-events-none select-none" aria-hidden>
             {/* Mockup do iPhone (imagem única, sem moldura/fundo) */}
             <img
-              src="/mockup.png"
+              src="/mockup-topo.png"
               alt="Preview do app"
               className="absolute left-1/2 -translate-x-1/2 top-6 md:top-10 w-[244px] md:w-[315px] h-auto object-contain z-10"
             />
