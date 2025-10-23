@@ -40,7 +40,7 @@ const LandingHero = () => {
   return (
     <section className="dv-hero-gradient relative overflow-hidden w-full pt-10 md:pt-16 pb-16 md:pb-28">
       <div className="w-full px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 max-w-6xl mx-auto items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 lg:gap-20 max-w-7xl mx-auto items-center">
           {/* Lado Esquerdo – Texto principal */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ const LandingHero = () => {
           </motion.div>
 
           {/* Lado Direito – Telefone + cards flutuantes */}
-          <div className="relative order-1 md:order-2 h-[420px] md:h-[560px] pointer-events-none select-none" aria-hidden>
+          <div className="relative order-1 md:order-2 h-[420px] md:h-[560px] lg:h-[620px] pointer-events-none select-none" aria-hidden>
             {/* Mockup do iPhone */}
             <img
               src="/mockup-topo.png"
@@ -95,48 +95,48 @@ const LandingHero = () => {
             {/* Cards flutuantes */}
             {/* Top-Right (pequeno) */}
             <motion.div
-              className="absolute block -right-2 md:-right-6 lg:-right-10 top-3 md:top-8 lg:top-10 z-20"
+              className="absolute block -right-2 md:right-0 lg:-right-10 top-3 md:top-8 lg:top-10 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.2)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 max-w-[100px] md:max-w-[200px]" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.25)'}}>
-                <CardHeader className="pb-1 px-2 pt-2 md:pb-2 md:px-6 md:pt-6">
-                  <CardTitle className="text-[10px] md:text-sm leading-tight">Gastei R$ 45 no almoço hoje</CardTitle>
+              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 max-w-[100px] md:max-w-[160px] lg:max-w-[200px]" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.25)'}}>
+                <CardHeader className="pb-1 px-2 pt-2 md:pb-2 md:px-4 lg:px-6 md:pt-4 lg:pt-6">
+                  <CardTitle className="text-[10px] md:text-xs lg:text-sm leading-tight">Gastei R$ 45 no almoço hoje</CardTitle>
                 </CardHeader>
               </Card>
             </motion.div>
 
             {/* Top-Left (meta mensal) */}
             <motion.div
-              className="absolute block -left-1 md:-left-6 lg:-left-10 top-0 md:top-4 lg:top-6 z-20"
+              className="absolute block -left-1 md:left-0 lg:-left-10 top-0 md:top-4 lg:top-6 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.35)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 max-w-[115px] md:max-w-[240px]" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.25)'}}>
-                <CardHeader className="pb-0 px-2 pt-1.5 md:pb-1 md:px-6 md:pt-6">
-                  <CardTitle className="text-[9px] md:text-xs uppercase tracking-wide text-muted-foreground">Meta mensal</CardTitle>
+              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 max-w-[115px] md:max-w-[180px] lg:max-w-[240px]" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.25)'}}>
+                <CardHeader className="pb-0 px-2 pt-1.5 md:pb-1 md:px-4 lg:px-6 md:pt-4 lg:pt-6">
+                  <CardTitle className="text-[9px] md:text-[10px] lg:text-xs uppercase tracking-wide text-muted-foreground">Meta mensal</CardTitle>
                 </CardHeader>
-                <CardContent className="pt-0 px-2 pb-2 md:px-6 md:pb-6">
-                  <div className="text-[10px] md:text-sm font-semibold dv-text-accent mb-0.5 md:mb-1">R$ 3.247,50</div>
-                  <div className="h-1 md:h-2 w-full rounded-full bg-muted overflow-hidden">
+                <CardContent className="pt-0 px-2 pb-2 md:px-4 lg:px-6 md:pb-4 lg:pb-6">
+                  <div className="text-[10px] md:text-xs lg:text-sm font-semibold dv-text-accent mb-0.5 md:mb-1">R$ 3.247,50</div>
+                  <div className="h-1 md:h-1.5 lg:h-2 w-full rounded-full bg-muted overflow-hidden">
                     <div className="h-full w-[85%] bg-gradient-to-r from-primary to-secondary"></div>
                   </div>
-                  <div className="mt-0.5 md:mt-1 text-[8px] md:text-[11px] text-muted-foreground">85% atingida</div>
+                  <div className="mt-0.5 md:mt-1 text-[8px] md:text-[10px] lg:text-[11px] text-muted-foreground">85% atingida</div>
                 </CardContent>
               </Card>
             </motion.div>
 
             {/* Middle-Left (insights) */}
             <motion.div
-              className="absolute block -left-12 md:-left-24 lg:-left-28 top-20 md:top-36 lg:top-40 z-20"
+              className="absolute block -left-12 md:-left-16 lg:-left-28 top-20 md:top-36 lg:top-40 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.5)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-accent/20 bg-background/80 backdrop-blur-xl border border-accent/30 max-w-[150px] md:max-w-[300px]" style={{boxShadow: '0 0 20px rgba(59, 130, 246, 0.25)'}}>
-                <CardHeader className="pb-1 px-2 pt-2 md:pb-2 md:px-6 md:pt-6">
-                  <CardTitle className="text-[9px] md:text-xs uppercase tracking-wide text-cyan-400">Insights IA</CardTitle>
+              <Card className="rounded-lg shadow-lg ring-1 ring-accent/20 bg-background/80 backdrop-blur-xl border border-accent/30 max-w-[150px] md:max-w-[220px] lg:max-w-[300px]" style={{boxShadow: '0 0 20px rgba(59, 130, 246, 0.25)'}}>
+                <CardHeader className="pb-1 px-2 pt-2 md:pb-2 md:px-4 lg:px-6 md:pt-4 lg:pt-6">
+                  <CardTitle className="text-[9px] md:text-[10px] lg:text-xs uppercase tracking-wide text-cyan-400">Insights IA</CardTitle>
                 </CardHeader>
-                <CardContent className="pt-0 px-2 pb-2 md:px-6 md:pb-6 text-[10px] md:text-sm text-muted-foreground">
+                <CardContent className="pt-0 px-2 pb-2 md:px-4 lg:px-6 md:pb-4 lg:pb-6 text-[10px] md:text-xs lg:text-sm text-muted-foreground">
                   <span className="md:hidden">Economizou 23% em alimentação.</span>
                   <span className="hidden md:block">Você economizou 23% em alimentação comparado ao mês passado.</span>
                 </CardContent>
@@ -145,33 +145,33 @@ const LandingHero = () => {
 
             {/* Bottom-Right (gasto do dia) */}
             <motion.div
-              className="absolute block -right-1 md:-right-3 lg:-right-6 bottom-12 md:bottom-20 lg:bottom-24 z-20"
+              className="absolute block -right-1 md:right-0 lg:-right-6 bottom-12 md:bottom-20 lg:bottom-24 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.65)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 max-w-[110px] md:max-w-[220px]" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.25)'}}>
-                <CardHeader className="pb-0.5 px-2 pt-2 md:pb-1 md:px-6 md:pt-6">
-                  <CardTitle className="text-[9px] md:text-xs uppercase tracking-wide text-muted-foreground">Gasto do dia</CardTitle>
+              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 max-w-[110px] md:max-w-[160px] lg:max-w-[220px]" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.25)'}}>
+                <CardHeader className="pb-0.5 px-2 pt-2 md:pb-1 md:px-4 lg:px-6 md:pt-4 lg:pt-6">
+                  <CardTitle className="text-[9px] md:text-[10px] lg:text-xs uppercase tracking-wide text-muted-foreground">Gasto do dia</CardTitle>
                 </CardHeader>
-                <CardContent className="pt-0 px-2 pb-2 md:px-6 md:pb-6">
-                  <div className="text-[10px] md:text-sm">R$ 125,00 <span className="text-[8px] md:text-[11px] text-muted-foreground">(total)</span></div>
+                <CardContent className="pt-0 px-2 pb-2 md:px-4 lg:px-6 md:pb-4 lg:pb-6">
+                  <div className="text-[10px] md:text-xs lg:text-sm">R$ 125,00 <span className="text-[8px] md:text-[10px] lg:text-[11px] text-muted-foreground">(total)</span></div>
                 </CardContent>
               </Card>
             </motion.div>
 
             {/* Bottom-Left (receita registrada) */}
             <motion.div
-              className="absolute block -left-4 md:-left-7 lg:-left-12 bottom-2 md:bottom-5 lg:bottom-7 z-20"
+              className="absolute block -left-4 md:left-0 lg:-left-12 bottom-2 md:bottom-5 lg:bottom-7 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.75)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 max-w-[120px] md:max-w-[240px]" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.25)'}}>
-                <CardHeader className="pb-0.5 px-2 pt-2 md:pb-1 md:px-6 md:pt-6">
-                  <CardTitle className="text-[9px] md:text-sm">Parabéns! Receita registrada</CardTitle>
+              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 max-w-[120px] md:max-w-[180px] lg:max-w-[240px]" style={{boxShadow: '0 0 20px rgba(99, 102, 241, 0.25)'}}>
+                <CardHeader className="pb-0.5 px-2 pt-2 md:pb-1 md:px-4 lg:px-6 md:pt-4 lg:pt-6">
+                  <CardTitle className="text-[9px] md:text-xs lg:text-sm">Parabéns! Receita registrada</CardTitle>
                 </CardHeader>
-                <CardContent className="pt-0 px-2 pb-2 md:px-6 md:pb-6">
-                  <div className="text-[10px] md:text-sm text-cyan-400 font-semibold">R$ 3.247,50</div>
-                  <div className="text-[8px] md:text-[11px] text-muted-foreground">Crédito confirmado</div>
+                <CardContent className="pt-0 px-2 pb-2 md:px-4 lg:px-6 md:pb-4 lg:pb-6">
+                  <div className="text-[10px] md:text-xs lg:text-sm text-cyan-400 font-semibold">R$ 3.247,50</div>
+                  <div className="text-[8px] md:text-[10px] lg:text-[11px] text-muted-foreground">Crédito confirmado</div>
                 </CardContent>
               </Card>
             </motion.div>
