@@ -112,7 +112,7 @@ const LandingPage = () => {
             <div className="flex justify-center order-2 lg:order-1">
               <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl">
                 <img 
-                  src="/images/sections/painel.png"
+                  src="/images/sections/dashboard.png"
                   alt="Painel profissional"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
