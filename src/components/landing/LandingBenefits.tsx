@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import { 
     BarChart3, 
     Target, 
@@ -103,7 +103,7 @@ const LandingBenefits = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    {features.map((feature, index) => (
+                    {features.map((feature) => (
                         <motion.div
                             key={feature.title}
                             className="group relative"

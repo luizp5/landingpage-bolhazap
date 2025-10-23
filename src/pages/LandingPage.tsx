@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import LandingHero from '@/components/landing/LandingHero';
 import LandingPricing from '@/components/landing/LandingPricing';
 import LandingBenefits from '@/components/landing/LandingBenefits';
