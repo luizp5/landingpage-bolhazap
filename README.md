@@ -1,73 +1,113 @@
-# Welcome to your Lovable project
+# Landing Page Standalone - Poupeja
 
-## Project info
+Uma landing page independente e estática para o aplicativo Poupeja.
 
-**URL**: https://lovable.dev/projects/427ef2ba-db04-4143-a25b-a5cba54acc0c
+## 🚀 Características
 
-## How can I edit this code?
+- **Landing page estática** com configurações fixas
+- **Responsiva** e otimizada para todos os dispositivos
+- **SEO otimizado** com meta tags
+- **Animações suaves** com Framer Motion
+- **Performance otimizada** com Vite
+- **TypeScript** para maior segurança de tipos
 
-There are several ways of editing your application.
+## 📦 Instalação
 
-**Use Lovable**
+1. Clone ou baixe este projeto
+2. Instale as dependências:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/427ef2ba-db04-4143-a25b-a5cba54acc0c) and start prompting.
+```bash
+npm install
+```
 
-Changes made via Lovable will be committed automatically to this repo.
+3. Execute o projeto:
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🛠️ Scripts Disponíveis
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev`: Inicia o servidor de desenvolvimento
+- `npm run build`: Gera a build de produção
+- `npm run preview`: Visualiza a build de produção
 
-**Use GitHub Codespaces**
+## 📁 Estrutura do Projeto
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+landing-page-standalone/
+├── public/
+│   └── images/
+├── src/
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── badge.tsx
+│   │   │   ├── button.tsx
+│   │   │   └── card.tsx
+│   │   ├── LandingHeader.tsx
+│   │   ├── LandingHero.tsx
+│   │   ├── LandingPricing.tsx
+│   │   ├── LandingBenefits.tsx
+│   │   └── LandingCTA.tsx
+│   ├── hooks/
+│   │   ├── useBrandingConfig.ts
+│   │   └── usePlanConfig.ts
+│   ├── contexts/
+│   │   └── BrandingProvider.tsx
+│   ├── lib/
+│   │   └── utils.ts
+│   ├── styles/
+│   │   └── globals.css
+│   ├── App.tsx
+│   ├── LandingPage.tsx
+│   └── main.tsx
+├── package.json
+├── vite.config.ts
+├── tailwind.config.ts
+├── tsconfig.json
+└── index.html
+```
 
-## What technologies are used for this project?
+## 🎨 Personalização
 
-This project is built with:
+### Cores e Tema
+As cores podem ser personalizadas no arquivo `tailwind.config.ts` e `src/styles/globals.css`.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Componentes
+Todos os componentes estão na pasta `src/components/` e podem ser facilmente customizados.
 
-## How can I deploy this project?
+### Conteúdo
+O conteúdo está configurado diretamente nos componentes e pode ser alterado editando os arquivos correspondentes.
 
-Simply open [Lovable](https://lovable.dev/projects/427ef2ba-db04-4143-a25b-a5cba54acc0c) and click on Share -> Publish.
+## 🚀 Deploy
 
-## Can I connect a custom domain to my Lovable project?
+### Build de Produção
+```bash
+npm run build
+```
 
-Yes, you can!
+### Deploy em Serviços
+- **Vercel**: Conecte o repositório
+- **Netlify**: Faça upload da pasta `dist` ou conecte o repositório
+- **GitHub Pages**: Use o workflow de deploy automático
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📱 Responsividade
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+A landing page é totalmente responsiva e otimizada para:
+- 📱 Mobile (320px+)
+- 📱 Tablet (768px+)
+- 💻 Desktop (1024px+)
+- 🖥️ Large Desktop (1280px+)
+
+## 🔧 Tecnologias Utilizadas
+
+- **React 18** - Biblioteca principal
+- **TypeScript** - Tipagem estática
+- **Vite** - Build tool e dev server
+- **Tailwind CSS** - Framework CSS
+- **Framer Motion** - Animações
+- **Lucide React** - Ícones
+
+## 📄 Licença
+
+Este projeto é propriedade da Poupeja. Todos os direitos reservados.
