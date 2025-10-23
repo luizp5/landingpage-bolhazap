@@ -18,38 +18,38 @@ const LandingBenefits = () => {
     const features = [
         {
             icon: PiggyBank,
-            title: "Controle de Gastos",
-            description: "Saiba exatamente onde cada centavo é gasto. Categorização automática que revela seus padrões de consumo.",
+            title: "Gestão de Despesas",
+            description: "Monitore cada real gasto com precisão. Sistema automático de categorização que identifica seus hábitos financeiros.",
             color: "from-primary via-accent to-secondary"
         },
         {
             icon: BarChart3,
-            title: "Dashboard Inteligente",
-            description: "Veja sua situação financeira em segundos. Gráficos claros que mostram entrada, saída e saldo atual.",
+            title: "Visão Completa",
+            description: "Entenda sua situação financeira instantaneamente. Gráficos intuitivos com entradas, saídas e saldo disponível.",
             color: "from-primary via-accent to-secondary"
         },
         {
             icon: Target,
-            title: "Metas Financeiras",
-            description: "Alcance seus objetivos financeiros mais rápido. Defina metas e acompanhe seu progresso automaticamente.",
+            title: "Objetivos Financeiros",
+            description: "Conquiste suas metas com mais agilidade. Crie objetivos e monitore o progresso de forma automática.",
             color: "from-primary via-accent to-secondary"
         },
         {
             icon: FileText,
-            title: "Relatórios Inteligentes",
-            description: "Relatórios que ajudam você a decidir. Análises detalhadas para cortar gastos e aumentar economia.",
+            title: "Análises Detalhadas",
+            description: "Relatórios que orientam suas decisões. Dados precisos para reduzir despesas e maximizar economias.",
             color: "from-primary via-accent to-secondary"
         },
         {
             icon: Smartphone,
-            title: "Acesso Total",
-            description: "Suas finanças sempre à mão. Use no celular, computador ou tablet com sincronização automática.",
+            title: "Disponível Sempre",
+            description: "Seu dinheiro sob controle onde estiver. Acesse via celular, desktop ou tablet com sincronia em tempo real.",
             color: "from-primary via-accent to-secondary"
         },
         {
             icon: Shield,
-            title: "Segurança Garantida",
-            description: "Durma tranquilo sabendo que seus dados estão protegidos com criptografia militar e backup seguro.",
+            title: "Proteção Total",
+            description: "Tenha tranquilidade com segurança máxima. Seus dados protegidos com criptografia avançada e backups constantes.",
             color: "from-primary via-accent to-secondary"
         }
     ];
@@ -87,11 +87,11 @@ const LandingBenefits = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        Recursos que transformam suas finanças
+                        Funcionalidades que facilitam sua vida financeira
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Descubra como o <span className="dv-brand-text">{resolvedName}</span> pode revolucionar sua relação com o dinheiro 
-                        e te ajudar a alcançar a liberdade financeira.
+                        Conheça as ferramentas que o <span className="dv-brand-text">{resolvedName}</span> oferece para transformar 
+                        sua gestão financeira e conquistar seus objetivos.
                     </p>
                 </motion.div>
 

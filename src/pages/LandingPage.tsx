@@ -36,7 +36,7 @@ const LandingPage = () => {
         >
           <div className="w-full px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Como o <span className="dv-brand-text">{resolvedName}</span> funciona?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Veja como funciona o <span className="dv-brand-text">{resolvedName}</span></h2>
 
               {/* (restante do conteúdo permanece inalterado) */}
             </div>
@@ -58,10 +58,10 @@ const LandingPage = () => {
                 01
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-                Registre tudo no WhatsApp
+                Controle total via WhatsApp
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
-                Registre receitas e despesas diretamente pelo WhatsApp. Basta enviar uma mensagem para nosso assistente virtual e ele lançará automaticamente em sua conta.
+                Adicione receitas e despesas direto pelo WhatsApp. Envie uma mensagem simples para o assistente virtual e ele organiza tudo automaticamente na sua conta.
               </p>
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
@@ -70,7 +70,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Registro rápido por mensagem de texto ou áudio</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Lançamento instantâneo via texto ou áudio</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
                     <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -78,7 +78,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Interpretação e categorização inteligente</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Categorização automática com inteligência artificial</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
                     <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -86,7 +86,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Praticidade e comodidade</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Máxima praticidade no dia a dia</span>
                   </div>
                 </div>
             </div>
@@ -111,10 +111,10 @@ const LandingPage = () => {
                 02
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-                Painel profissional
+                Dashboard completo e intuitivo
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
-              Tenha acesso a um painel que pode ser visualizado no celular ou no computador, com todas as suas informações. E o melhor: você não precisa perder tempo cadastrando nada. seu assistente faz tudo para você pelo WhatsApp!
+              Acesse um painel completo no celular ou computador com todas as suas informações financeiras. O melhor: sem perder tempo com cadastros! O assistente organiza tudo automaticamente via WhatsApp.
               </p>
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
@@ -123,7 +123,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Gráficos de fluxo de caixa</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Visualização clara do seu fluxo de caixa</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
                     <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -131,7 +131,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Organização automatizada</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Tudo organizado automaticamente</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
                     <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -139,7 +139,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Experiência prática e acessível</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Interface simples e acessível</span>
                   </div>
                 </div>
             </div>
@@ -178,10 +178,10 @@ const LandingPage = () => {
                 03
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 sm:mb-6">
-                Categorias personalizadas
+                Organize do seu jeito
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
-                Por padrão o seu <span className="dv-brand-text">{resolvedName}</span> já cadastra as principais categorias pra você, mas você pode cadastrar novas categorias. Você pode criar categorias para sua empresa ou algo específico que você queira separar.
+                O <span className="dv-brand-text">{resolvedName}</span> já vem com as principais categorias configuradas, mas você pode criar novas a qualquer momento. Perfeito para separar despesas pessoais, empresariais ou qualquer outra necessidade específica.
               </p>
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
@@ -190,7 +190,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Cadastro ilimitado de categorias</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Crie quantas categorias precisar</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
                     <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -198,7 +198,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Categorização inteligente automática</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Sistema inteligente de categorização</span>
                   </div>
                   <div className="flex items-start sm:items-center space-x-3 justify-center lg:justify-start">
                     <div className="h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-0">
@@ -206,7 +206,7 @@ const LandingPage = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-sm sm:text-base text-muted-foreground text-left">Visualize ou peça no WhatsApp relatórios de cada categoria</span>
+                    <span className="text-sm sm:text-base text-muted-foreground text-left">Relatórios detalhados por categoria via WhatsApp</span>
                   </div>
                 </div>
             </div>
@@ -262,7 +262,7 @@ const LandingPage = () => {
           <div className="max-w-6xl mx-auto">
             <ShareButtons />
             <div className="text-center text-muted-foreground mt-6">
-              <p>&copy; 2025 {resolvedName}. Todos os direitos reservados. Transformando sua relação com o dinheiro.</p>
+              <p>&copy; 2025 {resolvedName}. Todos os direitos reservados. Simplificando sua gestão financeira.</p>
             </div>
           </div>
         </div>

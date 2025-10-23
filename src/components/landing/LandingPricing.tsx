@@ -37,7 +37,7 @@ const LandingPricing = () => {
     name: "Mensal",
     price: config.prices.monthly.displayPrice,
     period: "/mês",
-    description: "Para uso pessoal completo",
+    description: "Ideal para controle pessoal",
     features: config.prices.monthly.features,
     limitations: [],
     buttonText: "Assinar Agora",
@@ -51,7 +51,7 @@ const LandingPricing = () => {
     originalPrice: config.prices.annual.displayOriginalPrice,
     savings: config.prices.annual.displaySavings,
     monthlyEquivalent: config.prices.annual.monthlyEquivalent,
-    description: "Melhor custo-benefício",
+    description: "Máximo custo-benefício",
     features: config.prices.annual.features,
     limitations: [],
     buttonText: "Melhor Oferta",
@@ -71,10 +71,10 @@ const LandingPricing = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Escolha o plano ideal para você
+            Selecione seu plano perfeito
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Transforme sua vida financeira com nossos planos completos
+            Revolucione sua gestão financeira com planos pensados para você
           </p>
         </motion.div>
         

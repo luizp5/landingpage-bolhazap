@@ -50,11 +50,11 @@ const LandingHero = () => {
           >
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4" style={{letterSpacing: '-0.02em', lineHeight: '1.3'}}>
               <span className="block dv-brand-text">{productName}</span>
-              <span className="block text-foreground">Clareza e controle do seu dinheiro direto no WhatsApp</span>
+              <span className="block text-foreground">Gerencie suas finanças com clareza direto pelo WhatsApp</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed mx-auto md:mx-0">
-              Acompanhe gastos, metas e relatórios sem planilhas. Simples, prático e feito para o seu dia a dia.
+              Monitore despesas, alcance metas e visualize relatórios sem complicação. Controle financeiro descomplicado no seu dia a dia.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -63,7 +63,7 @@ const LandingHero = () => {
                 className="text-sm md:text-base px-6 md:px-8 py-5 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all hover:scale-[1.02]"
                 onClick={scrollToPlans}
               >
-                Quero começar agora
+                Começar agora
               </Button>
               <Button 
                 size="lg" 

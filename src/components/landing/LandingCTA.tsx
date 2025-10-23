@@ -29,11 +29,11 @@ const LandingCTA = () => {
           style={{boxShadow: '0 20px 60px rgba(99, 102, 241, 0.5)'}}
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-          Veja, Planeje e Domine o Seu Dinheiro.
+          Controle, Planeje e Conquiste Suas Metas.
           </h2>
           
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-3xl mx-auto opacity-95 leading-relaxed px-2">
-          Transforme sua relação com o dinheiro hoje mesmo. Com o <span className="text-white font-bold bg-white/20 px-2 py-1 rounded-lg border border-white/40">{resolvedName}</span>, você conquista controle total das suas finanças de forma simples e inteligente.
+          Revolucione sua gestão financeira agora. Com o <span className="text-white font-bold bg-white/20 px-2 py-1 rounded-lg border border-white/40">{resolvedName}</span>, você tem domínio completo do seu dinheiro de maneira prática e eficiente.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -42,8 +42,8 @@ const LandingCTA = () => {
               className="text-sm sm:text-base md:text-lg px-8 sm:px-10 py-4 sm:py-6 font-semibold w-64 sm:w-auto mx-auto rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-white text-primary hover:bg-gray-50 border-0 text-center"
               onClick={scrollToPlans}
             >
-              <span className="md:hidden">Quero controle financeiro</span>
-              <span className="hidden md:inline">Quero ter controle das minhas finanças</span>
+              <span className="md:hidden">Começar agora</span>
+              <span className="hidden md:inline">Quero começar agora</span>
             </Button>
           </div>
           
