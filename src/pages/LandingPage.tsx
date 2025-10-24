@@ -14,7 +14,7 @@ const LandingPage = () => {
   const resolvedName = import.meta.env.VITE_COMPANY_NAME || 'Poupe Já';
 
   return (
-    <div className="dv-theme min-h-screen w-full bg-gradient-to-br from-background via-muted/20 to-background flex flex-col text-foreground">
+    <div className="dv-theme min-h-screen w-full overflow-x-hidden bg-gradient-to-br from-background via-muted/20 to-background flex flex-col text-foreground">
       <LandingHeader />
 
       <motion.main

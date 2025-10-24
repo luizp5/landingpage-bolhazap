@@ -39,7 +39,7 @@ const LandingHero = () => {
 
   return (
     <section className="dv-hero-gradient relative overflow-hidden w-full pt-10 md:pt-16 pb-16 md:pb-28">
-      <div className="w-full px-6 md:px-8 lg:px-12">
+      <div className="w-full px-4 md:px-8 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 lg:gap-28 max-w-7xl mx-auto items-center">
           {/* Lado Esquerdo – Texto principal */}
           <motion.div
@@ -95,7 +95,7 @@ const LandingHero = () => {
             {/* Cards flutuantes */}
             {/* Top-Right (pequeno) */}
             <motion.div
-              className="absolute block right-0 md:-right-2 lg:-right-6 xl:-right-10 top-3 md:top-8 lg:top-10 z-20"
+              className="absolute block right-2 md:-right-2 lg:-right-6 xl:-right-10 top-3 md:top-8 lg:top-10 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.2)}
             >
@@ -108,7 +108,7 @@ const LandingHero = () => {
 
             {/* Top-Left (meta mensal) */}
             <motion.div
-              className="absolute block left-0 md:-left-2 lg:-left-6 xl:-left-10 top-0 md:top-4 lg:top-6 z-20"
+              className="absolute block left-2 md:-left-2 lg:-left-6 xl:-left-10 top-0 md:top-4 lg:top-6 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.35)}
             >
@@ -128,7 +128,7 @@ const LandingHero = () => {
 
             {/* Middle-Left (insights) */}
             <motion.div
-              className="absolute block -left-8 md:-left-12 lg:-left-20 xl:-left-28 top-20 md:top-32 lg:top-36 xl:top-40 z-20"
+              className="absolute block left-0 md:-left-12 lg:-left-20 xl:-left-28 top-20 md:top-32 lg:top-36 xl:top-40 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.5)}
             >
@@ -145,7 +145,7 @@ const LandingHero = () => {
 
             {/* Bottom-Right (gasto do dia) */}
             <motion.div
-              className="absolute block right-0 md:-right-1 lg:-right-4 xl:-right-6 bottom-12 md:bottom-16 lg:bottom-20 xl:bottom-24 z-20"
+              className="absolute block right-2 md:-right-1 lg:-right-4 xl:-right-6 bottom-12 md:bottom-16 lg:bottom-20 xl:bottom-24 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.65)}
             >
@@ -161,7 +161,7 @@ const LandingHero = () => {
 
             {/* Bottom-Left (receita registrada) */}
             <motion.div
-              className="absolute block left-0 md:-left-1 lg:-left-6 xl:-left-12 bottom-2 md:bottom-4 lg:bottom-5 xl:bottom-7 z-20"
+              className="absolute block left-2 md:-left-1 lg:-left-6 xl:-left-12 bottom-2 md:bottom-4 lg:bottom-5 xl:bottom-7 z-20"
               animate={floatAnimation}
               transition={floatTransition(0.75)}
             >
