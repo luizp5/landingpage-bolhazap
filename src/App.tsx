@@ -4,7 +4,11 @@ import { BrandingProvider } from "@/contexts/BrandingContext";
 import { useFavicon } from "@/hooks/useFavicon";
 import { useSEO } from "@/hooks/useSEO";
 import LandingPage from "./pages/LandingPage";
+import TermsOfUse from "./pages/TermsOfUse";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import "./App.css";
+import { useEffect, useState } from "react";
+import { initFacebookPixel } from "./lib/facebookPixel";
 
 const queryClient = new QueryClient();
 
@@ -18,11 +22,30 @@ function App() {
   // Forçar tema dark
   const defaultTheme = 'dark';
 
+  // Inicializa Facebook Pixel se houver ID no ambiente
+  useEffect(() => {
+    initFacebookPixel();
+  }, []);
+
+  // Roteamento simples por pathname
+  const [path, setPath] = useState<string>(window.location.pathname);
+  useEffect(() => {
+    const onPopState = () => setPath(window.location.pathname);
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider attribute="class" defaultTheme={defaultTheme} enableSystem>
         <BrandingProvider>
-          <LandingPage />
+          {path === '/termos-de-uso' ? (
+            <TermsOfUse />
+          ) : path === '/politica-de-privacidade' ? (
+            <PrivacyPolicy />
+          ) : (
+            <LandingPage />
+          )}
         </BrandingProvider>
       </ThemeProvider>
     </QueryClientProvider>

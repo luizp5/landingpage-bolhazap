@@ -108,6 +108,33 @@ A landing page é totalmente responsiva e otimizada para:
 - **Framer Motion** - Animações
 - **Lucide React** - Ícones
 
+## 📈 Facebook Pixel
+
+Esta landing suporta integração com Facebook Pixel usando variável de ambiente.
+
+- Defina `VITE_FACEBOOK_PIXEL_ID` no arquivo `.env` com o ID do seu Pixel.
+- A inicialização ocorre no `App.tsx` via utilitário `src/lib/facebookPixel.ts`.
+- O utilitário carrega `fbevents.js`, chama `fbq('init', ID)` e `fbq('track', 'PageView')`.
+- Logs de status são expostos em `window.__PIXEL_STATUS__` para monitoramento básico.
+
+### Debug em localhost
+Este projeto não utiliza mais flag de debug dedicada para o Pixel.
+
+### Verificação rápida
+- Abra a aplicação (`npm run dev`) e verifique no console:
+  - Mensagem `[Pixel] Inicializado com ID ...`.
+  - `window.fbq` definido e `window.__PIXEL_STATUS__` com `initialized: true`.
+- Envie um evento de teste no console:
+  ```js
+  window.fbq && window.fbq('trackCustom', 'PixelInitTest', { source: 'manual' })
+  ```
+
+### Observações
+- Em ambientes sem o ID, será logado um aviso e o Pixel não inicializa.
+- Alguns bloqueadores/anti-tracking podem impedir o carregamento de `fbevents.js`.
+  - Teste em janela anônima sem extensões, ou desative temporariamente ad-blockers.
+  - Verifique no Network se `https://connect.facebook.net/en_US/fbevents.js` carrega.
+
 ## 📄 Licença
 
 Este projeto é propriedade da Poupeja. Todos os direitos reservados.

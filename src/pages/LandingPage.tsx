@@ -261,8 +261,10 @@ const LandingPage = () => {
         <div className="w-full px-4">
           <div className="max-w-6xl mx-auto">
             <ShareButtons />
-            <div className="text-center text-muted-foreground mt-6">
-              <p>&copy; 2025 {resolvedName}. Todos os direitos reservados. Simplificando sua gestão financeira.</p>
+            <div className="mt-6 flex flex-col items-center gap-2 text-sm">
+              <a href="/termos-de-uso" className="text-muted-foreground hover:text-foreground">Termos de Uso</a>
+              <a href="/politica-de-privacidade" className="text-muted-foreground hover:text-foreground">Política de Privacidade</a>
+              <p className="text-muted-foreground">&copy; 2025 {resolvedName}. Todos os direitos reservados. Simplificando sua gestão financeira.</p>
             </div>
           </div>
         </div>

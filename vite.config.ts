@@ -33,6 +33,10 @@ export default defineConfig(async ({ mode }) => {
       react(),
       htmlPlugin(),
     ],
+    define: {
+      // Expõe variáveis não-VITE para o cliente quando necessário
+      // Mantemos apenas VITE_FACEBOOK_PIXEL_ID disponível no client
+    },
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),
