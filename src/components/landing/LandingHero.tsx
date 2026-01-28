@@ -48,7 +48,7 @@ const LandingHero = () => {
             transition={{ duration: 0.6 }}
             className="order-2 md:order-1 text-center md:text-left"
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 md:mb-6" style={{letterSpacing: '-0.02em', lineHeight: '1.3'}}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 md:mb-6" style={{ letterSpacing: '-0.02em', lineHeight: '1.3' }}>
               <span className="block dv-brand-text">{productName}</span>
               <span className="block text-foreground">Gerencie suas finanças com clareza direto pelo WhatsApp</span>
             </h1>
@@ -58,16 +58,16 @@ const LandingHero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
-              <Button 
-                size="lg" 
-                className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all hover:scale-[1.02]"
+              <Button
+                size="lg"
+                className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 bg-gradient-to-r from-primary to-secondary text-white hover:opacity-90 transition-all hover:scale-[1.02]"
                 onClick={scrollToPlans}
               >
                 Começar agora
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
+              <Button
+                size="lg"
+                variant="outline"
                 className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5"
                 onClick={handleLoginClick}
               >
@@ -99,7 +99,7 @@ const LandingHero = () => {
               animate={floatAnimation}
               transition={floatTransition(0.2)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 w-[6rem] md:w-[9rem] lg:w-[11rem] xl:w-[12.5rem]" style={{boxShadow: '0 0 1.25rem rgba(99, 102, 241, 0.25)'}}>
+              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 w-[6rem] md:w-[9rem] lg:w-[11rem] xl:w-[12.5rem]" style={{ boxShadow: '0 0 1.25rem rgba(0, 194, 224, 0.25)' }}>
                 <CardHeader className="pb-1 px-2 pt-2 md:pb-2 md:px-3 lg:px-4 xl:px-6 md:pt-3 lg:pt-4 xl:pt-6">
                   <CardTitle className="text-[0.625rem] md:text-xs lg:text-sm leading-tight">Gastei R$ 45 no almoço hoje</CardTitle>
                 </CardHeader>
@@ -112,7 +112,7 @@ const LandingHero = () => {
               animate={floatAnimation}
               transition={floatTransition(0.35)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 w-[7rem] md:w-[10.5rem] lg:w-[13rem] xl:w-[15rem]" style={{boxShadow: '0 0 1.25rem rgba(99, 102, 241, 0.25)'}}>
+              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 w-[7rem] md:w-[10.5rem] lg:w-[13rem] xl:w-[15rem]" style={{ boxShadow: '0 0 1.25rem rgba(0, 194, 224, 0.25)' }}>
                 <CardHeader className="pb-0 px-2 pt-1.5 md:pb-1 md:px-3 lg:px-4 xl:px-6 md:pt-3 lg:pt-4 xl:pt-6">
                   <CardTitle className="text-[0.5625rem] md:text-[0.625rem] lg:text-xs uppercase tracking-wide text-muted-foreground">Meta mensal</CardTitle>
                 </CardHeader>
@@ -132,9 +132,9 @@ const LandingHero = () => {
               animate={floatAnimation}
               transition={floatTransition(0.5)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-accent/20 bg-background/80 backdrop-blur-xl border border-accent/30 w-[9rem] md:w-[13rem] lg:w-[16.5rem] xl:w-[18.75rem]" style={{boxShadow: '0 0 1.25rem rgba(59, 130, 246, 0.25)'}}>
+              <Card className="rounded-lg shadow-lg ring-1 ring-accent/20 bg-background/80 backdrop-blur-xl border border-accent/30 w-[9rem] md:w-[13rem] lg:w-[16.5rem] xl:w-[18.75rem]" style={{ boxShadow: '0 0 1.25rem rgba(0, 194, 224, 0.25)' }}>
                 <CardHeader className="pb-1 px-2 pt-2 md:pb-2 md:px-3 lg:px-4 xl:px-6 md:pt-3 lg:pt-4 xl:pt-6">
-                  <CardTitle className="text-[0.5625rem] md:text-[0.625rem] lg:text-xs uppercase tracking-wide text-cyan-400">Insights IA</CardTitle>
+                  <CardTitle className="text-[0.5625rem] md:text-[0.625rem] lg:text-xs uppercase tracking-wide text-primary">Insights IA</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0 px-2 pb-2 md:px-3 lg:px-4 xl:px-6 md:pb-3 lg:pb-4 xl:pb-6 text-[0.625rem] md:text-xs lg:text-sm text-muted-foreground">
                   <span className="md:hidden">Economizou 23% em alimentação.</span>
@@ -149,7 +149,7 @@ const LandingHero = () => {
               animate={floatAnimation}
               transition={floatTransition(0.65)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 w-[6.875rem] md:w-[9.5rem] lg:w-[12rem] xl:w-[13.75rem]" style={{boxShadow: '0 0 1.25rem rgba(99, 102, 241, 0.25)'}}>
+              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 w-[6.875rem] md:w-[9.5rem] lg:w-[12rem] xl:w-[13.75rem]" style={{ boxShadow: '0 0 1.25rem rgba(0, 194, 224, 0.25)' }}>
                 <CardHeader className="pb-0.5 px-2 pt-2 md:pb-1 md:px-3 lg:px-4 xl:px-6 md:pt-3 lg:pt-4 xl:pt-6">
                   <CardTitle className="text-[0.5625rem] md:text-[0.625rem] lg:text-xs uppercase tracking-wide text-muted-foreground">Gasto do dia</CardTitle>
                 </CardHeader>
@@ -165,12 +165,12 @@ const LandingHero = () => {
               animate={floatAnimation}
               transition={floatTransition(0.75)}
             >
-              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 w-[7.5rem] md:w-[10.5rem] lg:w-[13.5rem] xl:w-[15rem]" style={{boxShadow: '0 0 1.25rem rgba(99, 102, 241, 0.25)'}}>
+              <Card className="rounded-lg shadow-lg ring-1 ring-primary/20 bg-background/80 backdrop-blur-xl border border-primary/30 w-[7.5rem] md:w-[10.5rem] lg:w-[13.5rem] xl:w-[15rem]" style={{ boxShadow: '0 0 1.25rem rgba(0, 194, 224, 0.25)' }}>
                 <CardHeader className="pb-0.5 px-2 pt-2 md:pb-1 md:px-3 lg:px-4 xl:px-6 md:pt-3 lg:pt-4 xl:pt-6">
                   <CardTitle className="text-[0.5625rem] md:text-xs lg:text-sm">Parabéns! Receita registrada</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0 px-2 pb-2 md:px-3 lg:px-4 xl:px-6 md:pb-3 lg:pb-4 xl:pb-6">
-                  <div className="text-[0.625rem] md:text-xs lg:text-sm text-cyan-400 font-semibold">R$ 3.247,50</div>
+                  <div className="text-[0.625rem] md:text-xs lg:text-sm text-primary font-semibold">R$ 3.247,50</div>
                   <div className="text-[0.5rem] md:text-[0.625rem] lg:text-[0.6875rem] text-muted-foreground">Crédito confirmado</div>
                 </CardContent>
               </Card>

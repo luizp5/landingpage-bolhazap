@@ -63,11 +63,11 @@ const LandingPricing = () => {
   return (
     <section className="py-24 w-full" id="planos">
       <div className="w-full px-4">
-        <motion.div 
-          className="text-center mb-16" 
-          initial={{ opacity: 0, y: 20 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.6 }} 
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -77,33 +77,33 @@ const LandingPricing = () => {
             Revolucione sua gestão financeira com planos pensados para você
           </p>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto"
-          initial={{ opacity: 0, y: 40 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.6, staggerChildren: 0.1 }} 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, staggerChildren: 0.1 }}
           viewport={{ once: true }}
         >
           {plans.map((plan, index) => (
-            <motion.div 
-              key={index} 
-              initial={{ opacity: 0, y: 20 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              transition={{ duration: 0.6, delay: index * 0.1 }} 
-              viewport={{ once: true }} 
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
               className="relative"
             >
-              <Card className={`h-full relative ${plan.popular ? 'border-accent shadow-2xl scale-105 bg-gradient-to-br from-card to-card/80' : 'hover:shadow-lg border-primary/20'} transition-all duration-300`} style={plan.popular ? {boxShadow: '0 0 40px rgba(99, 102, 241, 0.4)'} : {}}>
+              <Card className={`h-full relative ${plan.popular ? 'border-accent shadow-2xl scale-105 bg-gradient-to-br from-card to-card/80' : 'hover:shadow-lg border-primary/20'} transition-all duration-300`} style={plan.popular ? { boxShadow: '0 0 40px rgba(99, 102, 241, 0.4)' } : {}}>
                 {plan.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-gradient-to-r from-primary to-accent text-white px-4 py-1 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
-                      <Star className="h-4 w-4 text-cyan-300" />
+                    <div className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
+                      <Star className="h-4 w-4 text-yellow-300" />
                       Mais Popular
                     </div>
                   </div>
                 )}
-                
+
                 <CardHeader className="text-center pb-4">
                   <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
                   <div className="mt-4">
@@ -119,12 +119,12 @@ const LandingPricing = () => {
                   </div>
                   <p className="text-muted-foreground mt-2">{plan.description}</p>
                 </CardHeader>
-                
+
                 <CardContent className="pt-0">
                   <ul className="space-y-3 mb-8">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-3">
-                        <Check className="h-5 w-5 text-cyan-400 flex-shrink-0" />
+                        <Check className="h-5 w-5 text-secondary flex-shrink-0" />
                         <span className="text-sm">{feature}</span>
                       </li>
                     ))}
@@ -134,12 +134,13 @@ const LandingPricing = () => {
                       </li>
                     ))}
                   </ul>
-                  
-                  <Button 
+
+                  <Button
                     className={`w-full ${plan.popular ? 'bg-gradient-to-r from-primary to-accent hover:opacity-90' : ''} transition-all hover:scale-[1.02]`}
-                    variant={plan.buttonVariant} 
+                    variant={plan.buttonVariant}
                     size="lg"
                     onClick={() => window.location.href = plan.linkTo}
+                    style={plan.popular ? { backgroundImage: 'linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)))' } : {}}
                   >
                     {plan.buttonText}
                   </Button>

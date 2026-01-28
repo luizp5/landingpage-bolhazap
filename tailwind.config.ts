@@ -59,16 +59,16 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				metacash: {
-					teal: '#4ECDC4',
+					teal: '#00C2E0', // Primary
 					coral: '#FF6B6B',
-					blue: '#2C6E7F',
-					purple: '#6C5CE7',
-					violet: '#A29BFE',
-					indigo: '#4834D4',
-					green: '#26DE81',
+					blue: '#00C2E0', // Force to Primary
+					purple: '#12D69E', // Force to Secondary (Mint)
+					violet: '#00C2E0', // Force to Primary
+					indigo: '#00C2E0', // Force to Primary
+					green: '#12D69E', // Secondary (Mint)
 					light: '#F7F9FC',
 					dark: '#2D3748',
-					success: '#10B981',
+					success: '#12D69E', // Mint
 					warning: '#FBBF24',
 					error: '#EF4444',
 					gray: '#94A3B8',

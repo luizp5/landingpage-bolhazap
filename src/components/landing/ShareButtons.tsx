@@ -39,45 +39,45 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
       <div className={`flex items-center gap-2 ${className}`}>
         <Share2 className="h-4 w-4 text-muted-foreground" />
         <span className="text-sm text-muted-foreground mr-2">Compartilhar:</span>
-        
+
         {showWhatsApp && (
           <Button
             variant="ghost"
             size="sm"
             onClick={handleWhatsAppShare}
-            className="h-8 w-8 p-0 hover:bg-green-500/10"
+            className="h-8 w-8 p-0 hover:bg-secondary/10"
           >
-            <MessageCircle className="h-4 w-4 text-green-500" />
+            <MessageCircle className="h-4 w-4 text-secondary" />
           </Button>
         )}
-        
+
         {showSocialMedia && (
           <>
             <Button
               variant="ghost"
               size="sm"
               onClick={() => handleSocialShare('facebook')}
-              className="h-8 w-8 p-0 hover:bg-blue-500/10"
+              className="h-8 w-8 p-0 hover:bg-primary/10"
             >
-              <Facebook className="h-4 w-4 text-blue-500" />
+              <Facebook className="h-4 w-4 text-primary" />
             </Button>
-            
+
             <Button
               variant="ghost"
               size="sm"
               onClick={() => handleSocialShare('twitter')}
-              className="h-8 w-8 p-0 hover:bg-sky-500/10"
+              className="h-8 w-8 p-0 hover:bg-primary/10"
             >
-              <Twitter className="h-4 w-4 text-sky-500" />
+              <Twitter className="h-4 w-4 text-primary" />
             </Button>
-            
+
             <Button
               variant="ghost"
               size="sm"
               onClick={() => handleSocialShare('linkedin')}
-              className="h-8 w-8 p-0 hover:bg-blue-600/10"
+              className="h-8 w-8 p-0 hover:bg-primary/10"
             >
-              <Linkedin className="h-4 w-4 text-blue-600" />
+              <Linkedin className="h-4 w-4 text-primary" />
             </Button>
           </>
         )}
@@ -93,28 +93,28 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
             variant="default"
             size="sm"
             onClick={handleWhatsAppShare}
-            className="h-10 w-10 p-0 rounded-full bg-green-500 hover:bg-green-600 shadow-lg"
+            className="h-10 w-10 p-0 rounded-full bg-secondary hover:bg-secondary/90 shadow-lg"
           >
             <MessageCircle className="h-5 w-5" />
           </Button>
         )}
-        
+
         {showSocialMedia && (
           <>
             <Button
               variant="default"
               size="sm"
               onClick={() => handleSocialShare('facebook')}
-              className="h-10 w-10 p-0 rounded-full bg-blue-500 hover:bg-blue-600 shadow-lg"
+              className="h-10 w-10 p-0 rounded-full bg-primary hover:bg-primary/90 shadow-lg"
             >
               <Facebook className="h-5 w-5" />
             </Button>
-            
+
             <Button
               variant="default"
               size="sm"
               onClick={() => handleSocialShare('twitter')}
-              className="h-10 w-10 p-0 rounded-full bg-sky-500 hover:bg-sky-600 shadow-lg"
+              className="h-10 w-10 p-0 rounded-full bg-primary hover:bg-primary/90 shadow-lg"
             >
               <Twitter className="h-5 w-5" />
             </Button>
@@ -131,7 +131,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
         <Share2 className="h-4 w-4" />
         <span>Compartilhe esta página:</span>
       </div>
-      
+
       <div className="flex gap-2">
         {showWhatsApp && (
           <Button
@@ -140,11 +140,11 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
             onClick={handleWhatsAppShare}
             className="flex items-center gap-2"
           >
-            <MessageCircle className="h-4 w-4 text-green-500" />
+            <MessageCircle className="h-4 w-4 text-secondary" />
             WhatsApp
           </Button>
         )}
-        
+
         {showSocialMedia && (
           <>
             <Button
@@ -153,27 +153,27 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({
               onClick={() => handleSocialShare('facebook')}
               className="flex items-center gap-2"
             >
-              <Facebook className="h-4 w-4 text-blue-500" />
+              <Facebook className="h-4 w-4 text-primary" />
               Facebook
             </Button>
-            
+
             <Button
               variant="outline"
               size="sm"
               onClick={() => handleSocialShare('twitter')}
               className="flex items-center gap-2"
             >
-              <Twitter className="h-4 w-4 text-sky-500" />
+              <Twitter className="h-4 w-4 text-primary" />
               Twitter
             </Button>
-            
+
             <Button
               variant="outline"
               size="sm"
               onClick={() => handleSocialShare('linkedin')}
               className="flex items-center gap-2"
             >
-              <Linkedin className="h-4 w-4 text-blue-600" />
+              <Linkedin className="h-4 w-4 text-primary" />
               LinkedIn
             </Button>
           </>

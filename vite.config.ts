@@ -15,12 +15,12 @@ export default defineConfig(async ({ mode }) => {
     name: 'html-transform',
     transformIndexHtml(html) {
       return html
-        .replace(/<%- title %>/g, env.VITE_SEO_TITLE || 'Poupe Já - Controle Financeiro Inteligente')
-        .replace(/<%- description %>/g, env.VITE_SEO_DESCRIPTION || 'Transforme sua vida financeira com o aplicativo mais completo e intuitivo do mercado. Controle total das suas finanças na palma da sua mão.')
-        .replace(/<%- keywords %>/g, env.VITE_SEO_KEYWORDS || 'controle financeiro, app financeiro, economia, orçamento pessoal, finanças')
-        .replace(/<%- author %>/g, env.VITE_SEO_AUTHOR || 'Poupe Já')
-        .replace(/<%- appUrl %>/g, env.VITE_APP_URL || 'https://demo-app.poupeja.com')
-        .replace(/<%- logoUrl %>/g, env.VITE_LOGO_URL || '/images/logo.png');
+        .replace(/__TITLE__/g, env.VITE_SEO_TITLE || 'Poupe Já - Controle Financeiro Inteligente')
+        .replace(/__DESCRIPTION__/g, env.VITE_SEO_DESCRIPTION || 'Transforme sua vida financeira com o aplicativo mais completo e intuitivo do mercado. Controle total das suas finanças na palma da sua mão.')
+        .replace(/__KEYWORDS__/g, env.VITE_SEO_KEYWORDS || 'controle financeiro, app financeiro, economia, orçamento pessoal, finanças')
+        .replace(/__AUTHOR__/g, env.VITE_SEO_AUTHOR || 'Poupe Já')
+        .replace(/__APP_URL__/g, env.VITE_APP_URL || 'https://demo-app.poupeja.com')
+        .replace(/__LOGO_URL__/g, env.VITE_LOGO_URL || '/images/logo.png');
     },
   });
 

@@ -15,12 +15,12 @@ const queryClient = new QueryClient();
 function App() {
   // Configura o favicon dinamicamente
   useFavicon();
-  
+
   // Configura as meta tags de SEO dinamicamente
   useSEO();
 
-  // Forçar tema dark
-  const defaultTheme = 'dark';
+  // Forçar tema light
+  const defaultTheme = 'light';
 
   // Inicializa Facebook Pixel se houver ID no ambiente
   useEffect(() => {

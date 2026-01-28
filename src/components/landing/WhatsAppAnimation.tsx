@@ -15,16 +15,16 @@ export const WhatsAppAnimation = () => {
   const interactions = [
     {
       userMessage: { text: "Gastei 55,00 no almoço hoje", time: "12:30" },
-      botMessage: { 
-        text: "🎉 Despesa registrada com sucesso!\n\n✅ Tipo: Despesa\n📝 Descrição: Almoço\n💰 Valor: R$ 55,00\n📍 Categoria: Alimentação\n🗓 Data: 23/10/2025", 
-        time: "12:30" 
+      botMessage: {
+        text: "🎉 Despesa registrada com sucesso!\n\n✅ Tipo: Despesa\n📝 Descrição: Almoço\n💰 Valor: R$ 55,00\n📍 Categoria: Alimentação\n🗓 Data: 23/10/2025",
+        time: "12:30"
       }
     },
     {
       userMessage: { text: "Recebi 200,00 de freelance", time: "14:15" },
-      botMessage: { 
-        text: "🎉 Que ótimo! Receita adicionada com sucesso!\n\n✅ Tipo: Receita\n📝 Descrição: Freelance\n💰 Valor: R$ 200,00\n📍 Categoria: Freelance\n🗓 Data: 23/10/2025", 
-        time: "14:15" 
+      botMessage: {
+        text: "🎉 Que ótimo! Receita adicionada com sucesso!\n\n✅ Tipo: Receita\n📝 Descrição: Freelance\n💰 Valor: R$ 200,00\n📍 Categoria: Freelance\n🗓 Data: 23/10/2025",
+        time: "14:15"
       }
     },
   ];
@@ -39,30 +39,30 @@ export const WhatsAppAnimation = () => {
       setIsTyping(false);
 
       const interaction = interactions[currentInteractionIndex];
-      
+
       // Passo 1: Mostrar mensagem do usuário
       timeoutId = setTimeout(() => {
-        setMessages([{ 
-          id: 0, 
-          text: interaction.userMessage.text, 
-          time: interaction.userMessage.time, 
-          isBot: false 
+        setMessages([{
+          id: 0,
+          text: interaction.userMessage.text,
+          time: interaction.userMessage.time,
+          isBot: false
         }]);
-        
+
         // Passo 2: Mostrar indicador "digitando..."
         timeoutId = setTimeout(() => {
           setIsTyping(true);
-          
+
           // Passo 3: Mostrar resposta do bot
           timeoutId = setTimeout(() => {
             setIsTyping(false);
-            setMessages(prev => [...prev, { 
-              id: 1, 
-              text: interaction.botMessage.text, 
-              time: interaction.botMessage.time, 
-              isBot: true 
+            setMessages(prev => [...prev, {
+              id: 1,
+              text: interaction.botMessage.text,
+              time: interaction.botMessage.time,
+              isBot: true
             }]);
-            
+
             // Passo 4: Pausar e ir para próxima interação
             timeoutId = setTimeout(() => {
               currentInteractionIndex = (currentInteractionIndex + 1) % interactions.length;
@@ -100,10 +100,10 @@ export const WhatsAppAnimation = () => {
           {/* Chat Area */}
           <div className="h-[380px] p-4 overflow-hidden relative">
             {/* WhatsApp Background Pattern */}
-            <div className="absolute inset-0 opacity-20" 
-                 style={{
-                   backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")`,
-                 }}>
+            <div className="absolute inset-0 opacity-20"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.05'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")`,
+              }}>
             </div>
 
             {/* Messages */}
@@ -122,7 +122,7 @@ export const WhatsAppAnimation = () => {
                       <p className="text-sm text-gray-800 whitespace-pre-line">{message.text}</p>
                       <div className={`flex items-center ${message.isBot ? 'justify-start' : 'justify-end'} gap-1 mt-1`}>
                         <span className="text-[10px] text-gray-500">{message.time}</span>
-                        {!message.isBot && <span className="text-[10px] text-blue-500">✓✓</span>}
+                        {!message.isBot && <span className="text-[10px] text-primary">✓✓</span>}
                       </div>
                     </div>
                   </motion.div>
