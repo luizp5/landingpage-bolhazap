@@ -61,10 +61,10 @@
 
   html {
     width: 100%;
-    height: 100%;
+    /* height: 100%; removed to let body control height */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; removed to avoid conflict */
   }
 
   body {
@@ -75,6 +75,9 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    /* Kept only here */
+    position: relative;
+    /* Ensure it stays in flow */
   }
 
   #root {
@@ -82,7 +85,7 @@
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; removed to avoid conflict */
   }
 
   /* Custom scrollbar styles */
@@ -214,4 +217,13 @@
     radial-gradient(1200px 600px at 78% 18%, hsl(var(--primary) / 0.15), transparent 60%),
     radial-gradient(800px 500px at 20% 80%, hsl(var(--primary) / 0.1), transparent 50%),
     linear-gradient(135deg, hsl(0 0% 100%), hsl(210 40% 96%));
+}
+
+/* Image Mockup Style */
+.image-mockup {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow:
+    0 20px 40px rgba(15, 23, 42, 0.08),
+    0 8px 16px rgba(15, 23, 42, 0.06);
 }
